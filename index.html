@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -12,7 +14,7 @@
               colors: {
                 customPurple: '#89338a', 
                 lightPurple: '#b0569b',
-                gold: '#f1cc73',
+                gold: '#bd8f3a',
               },
               backgroundImage: {
                 'custom-gradient': 'linear-gradient(180deg, rgba(252,221,140,1) 0%, rgba(171,121,31,0.756827731092437) 100%)',
@@ -31,8 +33,8 @@
 
     </main>
     <footer>
-      <div class="bg-custom-gradient">
-        <div class="bg-customPurple max-w-screen-xl mx-auto w-full max-w-80% rounded-lg p-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <section class="bg-custom-gradient">
+        <section class="bg-customPurple max-w-screen-xl mx-auto w-full max-w-80% rounded-lg p-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div class="flex flex-col space-y-4 md:w-1/2">
             <div class="text-white">
               <h1 class="text-3xl font-bold mb-2">Subscribe Now</h1>
@@ -40,7 +42,7 @@
             </div>
             <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
               <input type="email" placeholder="Email address" class="px-14 py-2 w-full md:w-auto rounded-full text-s text-gray-900" />
-              <button class="bg-white text-customPurple font-bold px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
+              <button class="bg-white text-customPurple font-bold px-6 py-2 rounded-full shadow-md hover:bg-custom-gradient">
                 SUBSCRIBE
               </button>
             </div>
@@ -48,8 +50,95 @@
           <div class="md:w-1/2" >
             <img src="img/envelope2.png" alt="Subscription Illustration" class="w-[500px] h-[300px] rounded-xl">
           </div>
+        </section>
+        <section class="max-w-full flex flex-row mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="img/Frame-38.jpg" alt="Promo Email" class="w-[500px] h-[300px] rounded-full">
+  
+          <div class="p-10">
+            <h1 class="text-2xl font-bold text-customPurple">
+              Get a 3-week supply of Brighter By Nature SPF35 FREE with any skincare purchase.
+            </h1>
+            <p class="text-xl font-bold mt-10">USE CODE: <strong class="text-gold">Autumn</strong></p>
+      
+            <button class="bg-customPurple hover:bg-custom-gradient text-white py-2 px-6 rounded-xl inline-block mt-10">SHOP NOW  <i class='fas fa-caret-right text-xl'></i>
+            </button>
+          </div>
+        </section>
+        <section class="flex justify-around p-4 bg-gray-100 text-customPurple">
+          <div class="text-center">
+            <i class="far fa-comment text-3xl"></i>
+            <p class="text-sm p-2">Live Chat</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <i class="far fa-envelope text-3xl"></i>
+            <p class="text-sm p-2">Email Your Questions</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <i class="fa fa-phone text-3xl"></i>
+            <p class="text-sm p-2">Get Support</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <i class="fas fa-map-marker-alt text-3xl"></i>
+            <p class="text-sm p-2">Store Locator</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <i class="fa fa-mail-forward text-3xl"></i>
+            <p class="text-sm p-2">Forward to a friend</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="flex justify-between p-4 bg-gray-100 text-customPurple">
+            <a href="#" class="px-2"><i class="fab fa-facebook-square text-3xl"></i></a>
+            <a href="#" class="px-2"><i class="fab fa-twitter-square text-3xl"></i></a>
+            <a href="#" class="px-2"><i class="fa fa-youtube-square text-3xl"></i></a>
+            <a href="#" class="px-2"><i class="fas fa-sms text-3xl"></i></a>
+            <a href="#" class="px-2"><i class="fas fa-sms text-3xl"></i></a>
+          </div>
+        </section>
+        <div class="bg-white p-4">
+          <p class="text-xs text-gray-500 mb-10">Offer valid while supplies last at Origins.com, Origins Retail Store and Department Store locations...</p>
+          <p class="text-customPurple text-l font-bold mb-4">Please do not reply to this email.</p>
+          <p class="text-xs text-gray-500 mb-10">For questions about an order, other questions and comments, contact <a href="#" class="text-customPurple font-bold underline">Customer Service</a> via <a href="#" class="text-customPurple font-bold underline">Email</a> or phone 49-.........</p>
         </div>
-      </div>
-      </footer>      
+        <div class="bg-customPurple p-8 flex flex-row justify-around">
+           <div>
+            <ul>
+              <li class="text-xl py-4">USEFUL LINKS</li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">About Us</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Contact Us</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Privacy Policy</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Shipping Policy</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Terms and Condition</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Return and Refund Policy</a></li>
+            </ul>
+           </div>
+           <div>
+            <ul>
+              <li class="text-xl py-4">MY ACCOUNT</li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">My Account</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">My Orders</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Checkout</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Cart</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Shop</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Login/Register</a></li>
+            </ul>
+           </div>
+           <div>
+            <ul>
+              <li class="text-xl py-4">OUR CATEGORIES</li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Skin Care</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Make Up</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Perfume</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Gifts and Sets</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Best Seller</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Special Offers</a></li>
+            </ul>
+           </div>
+        </div>
+      </section>
+    </footer>      
 </body>
 </html>
