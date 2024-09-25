@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script>
         tailwind.config = {
           theme: {
@@ -12,17 +15,18 @@
               colors: {
                 customPurple: '#89338a', 
                 lightPurple: '#b0569b',
-              }
+                gold: '#bd8f3a',
+              },
+              backgroundImage: {
+                'custom-gradient': 'linear-gradient(180deg, rgba(252,221,140,1) 0%, rgba(171,121,31,0.756827731092437) 100%)',
+            },
             }
           }
         }
-       
-      </script>
-    
+    </script>
     <title>Beauty WBS Girls Company</title>
-
 </head>
-<body>
+<body class="bg-purple-50">
     <header>
     <div class="bg-[url('img/logobg.jpg')] bg-cover min-h-[500px]  ml-0 mt-0" >
      <div class="w-3/5 min-h-[500px] min-w-[1200px] mx-auto ml-300 ">
@@ -55,26 +59,287 @@
     
     <main>
 
+
+
+      <div class="bg-gray-50 py-12 px-6">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center">
+          <!-- Text Content -->
+          <div class="lg:w-1/2 w-full lg:pr-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Choose makeup formula
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Flexible formula – We have different cosmetics formulations, we can also customize the formulations according to your requirements.
+            </p>
+            <a href="#" class="bg-purple-400 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-purple-500 transition">
+              See more &gt;
+            </a>
+          </div>
+      
+          <!-- Image Content -->
+          <div class="lg:w-1/2 w-full mt-8 lg:mt-0">
+            <img src="img/5.jpg" alt="Makeup formula image" class="w-full object-cover rounded-lg shadow-md">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container mx-auto py-12">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
+            
+            <!-- Card 1 -->
+            <div class="flex flex-col items-center">
+                <div class="bg-purple-200 rounded-full w-48 h-48 flex items-center justify-center overflow-hidden border-4 border-purple-400">
+                    <img src="img/17.png" alt="We manufacture in Germay" class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-purple-800">We manufacture in Germay</h3>
+                <a href="#" class="text-purple-600 hover:underline">See more ></a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center">
+                <div class="bg-purple-200 rounded-full w-48 h-48 flex items-center justify-center overflow-hidden border-4 border-purple-400">
+                    <img src="img/12.jpg" alt="19 Years Professional Makeup Production Experience" class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-purple-800">19 Years Professional Makeup Production Experience</h3>
+                <a href="#" class="text-purple-600 hover:underline">See more ></a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col items-center">
+                <div class="bg-purple-200 rounded-full w-48 h-48 flex items-center justify-center overflow-hidden border-4 border-purple-400">
+                    <img src="img/14.jpg" alt="We have a laboratory" class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-purple-800">We have a laboratory</h3>
+                <a href="#" class="text-purple-600 hover:underline">See more ></a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="flex flex-col items-center">
+                <div class="bg-purple-200 rounded-full w-48 h-48 flex items-center justify-center overflow-hidden border-4 border-purple-400">
+                    <img src="img/9.jpg" alt="We create our own formulation" class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-purple-800">We create our own formulation</h3>
+                <a href="#" class="text-purple-600 hover:underline">See more ></a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="flex flex-col items-center">
+                <div class="bg-purple-200 rounded-full w-48 h-48 flex items-center justify-center overflow-hidden border-4 border-purple-400">
+                    <img src="img/11.jpg" alt="Production Quality Control And Shipping Process" class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-purple-800">Production Quality Control And Shipping Process</h3>
+                <a href="#" class="text-purple-600 hover:underline">See more ></a>
+            </div>
+
+        </div>
+    </div>
+  
+  
+      <div class="py-10 bg-white">
+        <h2 class="text-4xl font-semibold text-center mb-4">Our exclusive services</h2>
+        <p class="text-center text-gray-600 mb-8">Created to make your life more beautiful</p>
+      
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Skin Quiz Card -->
+          <div class="bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+            <img class="w-full h-56 object-cover" src="img/2.jpg" alt="Skin Quiz">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Skin Quiz</h3>
+              <p class="text-gray-600 mb-4">Find the right care for your individual skin needs.</p>
+              <a href="#" class="text-indigo-600 font-semibold hover:underline">HOW IT WORKS</a>
+            </div>
+          </div>
+      
+          <!-- Serum Finder Card -->
+          <div class="bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+            <img class="w-full h-56 object-cover" src="img/1.jpg" alt="Serum Finder">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Serum Finder</h3>
+              <p class="text-gray-600 mb-4">Clear complexion? Anti-aging? Find the right serum for your needs.</p>
+              <a href="#" class="text-indigo-600 font-semibold hover:underline">ON YOUR MARKS, GET SET, GO!</a>
+            </div>
+          </div>
+      
+          <!-- Mask Finder Card -->
+          <div class="bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+            <img class="w-full h-56 object-cover" src="img/3.webp" alt="Mask Finder">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Mask Finder</h3>
+              <p class="text-gray-600 mb-4">Dry or oily skin? There's a mask for that!</p>
+              <a href="#" class="text-indigo-600 font-semibold hover:underline">DISCOVER</a>
+            </div>
+          </div>
+      
+          <!-- Live Beauty Consultation Card -->
+          <div class="bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+            <img class="w-full h-56 object-cover" src="img/4.jpg" alt="Beauty Consultation">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Live Beauty Consultation</h3>
+              <p class="text-gray-600 mb-4">Get tailored tips from a Clarins expert at home.</p>
+              <a href="#" class="text-indigo-600 font-semibold hover:underline">MAKE AN APPOINTMENT</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="bg-customPurple max-w-screen-xl mx-auto w-full max-w-80% rounded-lg p-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <section class="bg-custom-gradient">
+        <section class="bg-customPurple max-w-screen-xl mx-auto w-full max-w-80% rounded-lg p-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div class="flex flex-col space-y-4 md:w-1/2">
             <div class="text-white">
               <h1 class="text-3xl font-bold mb-2">Subscribe Now</h1>
               <p class="text-m text-purple-100">Get the updates, offers, tips and enhance your page building experience</p>
             </div>
             <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
-              <input type="email" placeholder="Email address" class="px-14 py-2 w-full md:w-auto rounded-full text-gray-900" />
-              <button class="bg-white text-customPurple font-bold px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
+              <input type="email" placeholder="Email address" class="px-14 py-2 w-full md:w-auto rounded-full text-s text-gray-900" />
+              <button class="bg-white text-customPurple font-bold px-6 py-2 rounded-full shadow-md hover:bg-custom-gradient">
                 SUBSCRIBE
               </button>
             </div>
           </div>
-      
           <div class="md:w-1/2" >
             <img src="img/envelope2.png" alt="Subscription Illustration" class="w-[500px] h-[300px] rounded-xl">
           </div>
+        </section>
+        <section class="flex justify-around p-2 bg-gray-100 text-black">
+          <div class="text-center">
+            <img src="img/collect.png" alt="click and collect">
+            <p class="text-sm p-2 font-bold">Click & Collect</p>
+            <p class="text-sm p-2">in 2 Hours</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <img src="img/truck.png" alt="Free Delivery">
+            <p class="text-sm p-2 font-bold">Free Delivery</p>
+            <p class="text-sm p-2">from 29,99 $</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <img src="img/App.png" alt="Mobile App">
+            <p class="text-sm p-2 font-bold">Our Application</p>
+            <p class="text-sm p-2">fast and simple</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <img src="img/return.png" alt="free Return">
+            <p class="text-sm p-2 font-bold">Return</p>
+            <p class="text-sm p-2">free Sending back</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <img src="img/payment.png" alt="Safe Payment">
+            <p class="text-sm p-2 font-bold">Safe Payment</p>
+            <p class="text-sm p-2">Pay so safe</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <img src="img/help.png" alt="Help">
+            <p class="text-sm p-2 font-bold">Help!</p>
+            <p class="text-sm p-2">Any Question?</p>
+          </div>
+        </section>
+        <section class="max-w-full flex flex-row mx-auto bg-white rounded-full m-2 shadow-md overflow-hidden">
+          <img src="img/Frame-38.jpg" alt="Promo Email" class="w-[500px] h-[300px] rounded-full">
+  
+          <div class="p-10">
+            <h1 class="text-2xl font-bold text-customPurple">
+              Get a 3-week supply of Brighter By Nature SPF35 FREE with any skincare purchase.
+            </h1>
+            <p class="text-xl font-bold mt-10">USE CODE: <strong class="text-gold">Autumn</strong></p>
+      
+            <button class="bg-customPurple hover:bg-custom-gradient text-white py-2 px-6 rounded-xl inline-block mt-10">SHOP NOW  <i class='fas fa-caret-right text-xl'></i>
+            </button>
+          </div>
+        </section>
+        <section class="flex justify-around p-4 bg-gray-100 text-customPurple">
+          <div class="text-center">
+            <i class="far fa-comment text-3xl"></i>
+            <p class="text-sm p-2">Live Chat</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <i class="far fa-envelope text-3xl"></i>
+            <p class="text-sm p-2">Email Your Questions</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <i class="fa fa-phone text-3xl"></i>
+            <p class="text-sm p-2">Get Support</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <i class="fas fa-map-marker-alt text-3xl"></i>
+            <p class="text-sm p-2">Store Locator</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="text-center">
+            <i class="fa fa-mail-forward text-3xl"></i>
+            <p class="text-sm p-2">Forward to a friend</p>
+          </div>
+          <div class="h-2xl w-px bg-gray-300"></div>
+          <div class="flex justify-between p-4 bg-gray-100 text-customPurple">
+            <a href="#" class="px-2"><i class="fab fa-facebook-square text-3xl"></i></a>
+            <a href="#" class="px-2"><i class="fab fa-twitter-square text-3xl"></i></a>
+            <a href="#" class="px-2"><i class="fa fa-youtube-square text-3xl"></i></a>
+            <a href="#" class="px-2"><i class="fas fa-sms text-3xl"></i></a>
+            <a href="#" class="px-2"><i class="fas fa-sms text-3xl"></i></a>
+          </div>
+        </section>
+        <div class="bg-white p-4">
+          <p class="text-xs text-gray-500 mb-10">Offer valid while supplies last at Origins.com, Origins Retail Store and Department Store locations...</p>
+          <p class="text-customPurple text-l font-bold mb-4">Please do not reply to this email.</p>
+          <p class="text-xs text-gray-500 mb-10">For questions about an order, other questions and comments, contact 
+            <a href="#" class="text-customPurple font-bold underline hover:text-gold hover: underline">Customer Service</a> via 
+            <a href="#" class="text-customPurple font-bold underline hover:text-gold hover: underline">Email</a> or phone 49-.........</p>
         </div>
-      </footer>      
+        <div class="bg-customPurple p-8 flex flex-row justify-around">
+           <div>
+            <ul>
+              <li class="text-xl py-4">USEFUL LINKS</li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">About Us</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Contact Us</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Privacy Policy</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Shipping Policy</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Terms and Condition</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Return and Refund Policy</a></li>
+            </ul>
+           </div>
+           <div>
+            <ul>
+              <li class="text-xl py-4">MY ACCOUNT</li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">My Account</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">My Orders</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Checkout</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Cart</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Shop</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Login/Register</a></li>
+            </ul>
+           </div>
+           <div>
+            <ul>
+              <li class="text-xl py-4">OUR CATEGORIES</li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Skin Care</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Make Up</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Perfume</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Gifts and Sets</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Best Seller</a></li>
+              <li class="my-2"><a href="#" class="text-white hover:text-black hover:underline">Special Offers</a></li>
+            </ul>
+           </div>
+           <div>
+            <ul>
+              <li class="text-xl py-4">PAYMENT OPTIONS</li>
+              <li class="my-2"><a href="#"><img class="w-[70px] h-[30px] transition-transform duration-300 ease-in-out transform hover:scale-110" src="img/paypal.png" alt="Paypal"></a></li>
+              <li class="my-2"><a href="#"><img class="w-[70px] h-[30px] transition-transform duration-300 ease-in-out transform hover:scale-110" src="img/klarna.png" alt="Klarna"></a></li>
+              <li class="my-2"><a href="#"><img class="w-[70px] h-[30px] transition-transform duration-300 ease-in-out transform hover:scale-110" src="img/mastercart2.png" alt="mastercart"></a></li>
+              <li class="my-2"><a href="#"><img class="w-[70px] h-[30px] transition-transform duration-300 ease-in-out transform hover:scale-110" src="img/visacart.png" alt="visacart"></a></li>
+              <li class="my-2"><a href="#"><img class="w-[70px] h-[30px] transition-transform duration-300 ease-in-out transform hover:scale-110" src="img/googlepay.png" alt="googlepay"></a></li>
+              <li class="my-2"><a href="#"><img class="w-[70px] h-[30px] transition-transform duration-300 ease-in-out transform hover:scale-110" src="img/applepay.png" alt="applepay"></a></li>
+            </ul>
+           </div>
+        </div>
+      </section>
+    </footer>      
 </body>
 </html>
